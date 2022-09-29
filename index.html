@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Standalone Vue Component Example</title>    
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/animations.css" type="text/css">
+</head>
+
+<body>
+    <div id="app">
+        <App></App>
+    </div>
+
+    <div id="meta">
+        <div class="image">
+            <img src="/assets/img/step2.2.jpg">
+        </div>
+        <div class="description">
+            <p class="current-step-message">
+                In this example we haven't changed anything in terms of our app's functionality, but have done some code reorganization insted, extracting components into separate files and loading templates asynchronously. See source code for details.
+            </p>
+            <p class="previous-step-message">
+                Finally, why not to add some animation, using Vue transitions? Let's add appearance transition for the root element, as well as list animations for our <b>cat-pins</b>. See the source code for implementation details.
+            </p>
+            <p class="previous-step-message task-message">
+                Seems like that's enough for simple standalone Vue examples. Let's move on to Vuex and bundle techniques, right?
+            </p>           
+        </div>
+    </div>
+
+    <footer id="footer">
+        Vue Examples by <a href="http://github.com/gbezyuk">gbezyuk</a>
+    </footer>
+
+    <script src="/vendor/vue@2.0.5.js"></script>
+    <script src="/vendor/ajax@0.0.0.min.js"></script>
+    <script type="text/javascript" src="/components/AuthorSignature.js"></script>
+    <script type="text/javascript" src="/components/CatPin.js"></script>
+    <script type="text/javascript" src="/components/App.js"></script>
+    
+    <script type="text/javascript">
+        new Vue({el: '#app'})                
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<transition name="fade" :appear="true">
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <div class="filter">
+            <label for="tag_filter">Filter by tag:</label>
+            <input v-model="filter_value" name="tag_filter" id="tag_filter" placeholder="filter by tag">
+            <button @click="filter_value=''">Clear</button>
+        </div>
+        <transition-group name="list" tag="div" class="cat-pins">
+            <cat-pin v-for="cat_pin in filtered_cat_pins"
+                class="list-complete-item"
+                :key="cat_pin.image_url"
+                :image_url="cat_pin.image_url"
+                :author="cat_pin.author"
+                :description="cat_pin.description"
+                :tags="cat_pin.tags"
+                :filter_value="filter_value"
+                @tag-clicked="update_filter"
+            ></cat-pin>
+            <link rel="stylesheet" href="/assets/css/cats.css" type="text/css">
+        </transition-group>
+    </div>
+    </transition>

@@ -1,0 +1,8 @@
+<div class="cat-pin">
+    <div class="image"><img :src="image_url"></div>
+    <ul class="tags">
+        <li v-for="tag in tags" :class='{active: filter_value == tag}' @click='handle_tag_click(tag)'>{{ tag }}</li>                
+    </ul>
+    <p class="description">{{ description }}</p>
+    <author-signature :avatar_url="author.avatar_url" :name="author.name" :status="author.status" :gender="author.gender">
+</div>

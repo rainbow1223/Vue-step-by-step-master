@@ -1,0 +1,39 @@
+{
+    "title": "CatInterest",
+    "filter_value": "",
+    "cat_pins": [
+        {
+            "image_url": "/assets/img/cats/munchkin-kitten.jpg",
+            "tags": ["munchkin", "kitten", "cat"],
+            "description": "A nice munchkin kitten pic",
+            "author": {
+                "name": "Told Myself",
+                "status": "Okay, you were right for me",
+                "avatar_url": "",
+                "gender": "male"
+            }
+        },
+        {
+            "image_url": "/assets/img/cats/siam-kitten.jpg",
+            "tags": ["siam", "kitten", "cat"],
+            "description": "Awesome siam kitten pic",
+            "author": {
+                "name": "But Felt",
+                "status": "... felt so lonely in your company =(",
+                "avatar_url": "",
+                "gender": "female"
+            }
+        },
+        {
+            "image_url": "/assets/img/cats/standing-cat.jpg",
+            "tags": ["cat", "standing", "cute"],
+            "description": "A well-known standing cat",
+            "author": {
+                "name": "But That",
+                "status": "it`s an ache I still remember",
+                "avatar_url": "/assets/img/avatars/mr-black-avatar.png",
+                "gender": "male"
+            }
+        }
+    ]
+}
